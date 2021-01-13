@@ -61,7 +61,7 @@ class About extends StatelessWidget {
                           children: [
                             RaisedButton(
                               onPressed: () {
-
+                                _hireme();
                               },
                               color: AppColors.yellow,
                               textColor: Colors.white,
@@ -139,7 +139,9 @@ class About extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                  _hireme();
+                },
                 color: AppColors.yellow,
                 textColor: Colors.white,
                 padding:
@@ -175,6 +177,10 @@ class About extends StatelessWidget {
 
   void _downloadCV() {
     launch(AppConstants.cv);
+  }
+  void _hireme() {
+    launch("https://wa.me/628815123766/?text=Halo Sahid, "
+        "\nSaya ingin menyewa anda untuk");
   }
 
   Widget _buildSkill(Skill skill) => Chip(label: Text(skill.name));

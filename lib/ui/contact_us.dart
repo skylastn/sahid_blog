@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_portfolio/ui/icon.dart';
 import 'package:mailto/mailto.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'responsive_widget.dart';
 import '../config/constants.dart';
@@ -45,23 +46,42 @@ class _ContactUsState extends State<ContactUs> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _buildContactInfo(
-                        'icons/email.png',
-                        'Mail Us:',
-                        AppConstants.mail,
+                      InkWell(
+                        onTap:(){
+                          _sendMailClean();
+                        },
+                        child: _buildContactInfo(
+                          'icons/email.png',
+                          'Mail Me:',
+                          AppConstants.mail,
+                        ),
                       ),
+
                       const SizedBox(height: 20),
-                      _buildContactInfo(
-                        'icons/call.png',
-                        'Call Us:',
-                        AppConstants.phone,
+                      InkWell(
+                        onTap: (){
+                          launch("https://wa.me/628815123766/?text=Halo Sahid, "
+                              "\nSaya ingin menyewa anda untuk");
+                        },
+                        child: _buildContactInfo(
+                          'icons/call.png',
+                          'Call Me:',
+                          AppConstants.phone,
+                        ),
                       ),
+
                       const SizedBox(height: 20),
-                      _buildContactInfo(
-                        'icons/pin.png',
-                        'Visit Us:',
-                        AppConstants.location,
-                      ),
+                      InkWell(
+                        onTap: (){
+                          launch("https://www.google.co.id/maps/place/Ar-Zha+Collections/@-7.7075004,110.6067443,19z/data=!4m5!3m4!1s0x2e7a4405dde64d75:0xd023430563dd396d!8m2!3d-7.7073037!4d110.6065468");
+                        },
+                        child: _buildContactInfo(
+                          'icons/pin.png',
+                          'Visit Me:',
+                          AppConstants.location,
+                        ),
+                      )
+
                     ],
                   ),
                 ),
@@ -82,7 +102,7 @@ class _ContactUsState extends State<ContactUs> {
         child: Column(
           children: [
             Text(
-              'GET IN TOUCH',
+              'Contact',
               style: AppStyles.title,
               textAlign: TextAlign.center,
             ),
@@ -95,23 +115,42 @@ class _ContactUsState extends State<ContactUs> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _buildContactInfo(
-                      'icons/email.png',
-                      'Mail Us:',
-                      AppConstants.mail,
+                    InkWell(
+                      onTap: (){
+                        _sendMailClean();
+                      },
+                      child: _buildContactInfo(
+                        'icons/email.png',
+                        'Mail Me:',
+                        AppConstants.mail,
+                      ),
                     ),
+
                     const SizedBox(height: 20),
-                    _buildContactInfo(
-                      'icons/call.png',
-                      'Call Us:',
-                      AppConstants.phone,
+                    InkWell(
+                      onTap: (){
+                        launch("https://wa.me/628815123766/?text=Halo Sahid, "
+                            "\nSaya ingin menyewa anda untuk");
+                      },
+                      child: _buildContactInfo(
+                        'icons/call.png',
+                        'Call Me:',
+                        AppConstants.phone,
+                      ),
                     ),
+
                     const SizedBox(height: 20),
-                    _buildContactInfo(
-                      'icons/pin.png',
-                      'Visit Us:',
-                      AppConstants.location,
+                    InkWell(
+                      onTap: (){
+                        launch("https://www.google.co.id/maps/place/Ar-Zha+Collections/@-7.7075004,110.6067443,19z/data=!4m5!3m4!1s0x2e7a4405dde64d75:0xd023430563dd396d!8m2!3d-7.7073037!4d110.6065468");
+                      },
+                      child: _buildContactInfo(
+                        'icons/pin.png',
+                        'Visit Me:',
+                        AppConstants.location,
+                      ),
                     ),
+
                   ],
                 ),
                 const SizedBox(height: 50),
@@ -171,41 +210,57 @@ class _ContactUsState extends State<ContactUs> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: TextFormField(
-                      validator: (text) {
-                        return (text.isValidName())
-                            ? null
-                            : 'Please insert valid name!';
-                      },
-                      decoration: InputDecoration(
-                        hintText: 'Your Name',
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 15),
-                  Expanded(
-                    child: TextFormField(
-                      validator: (text) {
-                        return (text.isValidEmail)
-                            ? null
-                            : 'Please insert valid email!';
-                      },
-                      decoration: InputDecoration(
-                        hintText: 'Your Email',
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
-                ],
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: TextFormField(
+              //         controller: _nameController,
+              //         validator: (text) {
+              //           return (text.isValidName())
+              //               ? null
+              //               : 'Please insert valid name!';
+              //         },
+              //         decoration: InputDecoration(
+              //           hintText: 'Your Name',
+              //           border: OutlineInputBorder(),
+              //         ),
+              //       ),
+              //     ),
+              //     const SizedBox(width: 15),
+              //     Expanded(
+              //       child: TextFormField(
+              //         controller: _emailController,
+              //         validator: (text) {
+              //           return (text.isValidEmail)
+              //               ? null
+              //               : 'Please insert valid email!';
+              //         },
+              //         decoration: InputDecoration(
+              //           hintText: 'Your Email',
+              //           border: OutlineInputBorder(),
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              TextFormField(
+                controller: _nameController,
+                validator: (text) {
+                  return (text.isValidName())
+                      ? null
+                      : 'Please insert valid name!';
+                },
+                decoration: InputDecoration(
+                  hintText: 'Your Name',
+                  border: OutlineInputBorder(),
+                ),
               ),
               const SizedBox(height: 20),
+
               TextFormField(
                 minLines: 3,
                 maxLines: 10,
+                controller: _contentController,
                 validator: (text) {
                   return (text.isValidName(minLength: 10))
                       ? null
@@ -232,26 +287,56 @@ class _ContactUsState extends State<ContactUs> {
     );
   }
 
+  void _sendMailClean() async {
+
+    final mailto = Mailto(
+      to: [AppConstants.mail],
+      subject: "",
+      body: "Halo Sahid, ",
+    );
+    await launch('$mailto');
+
+
+    // final server = await HttpServer.bind(InternetAddress.loopbackIPv4, 3000);
+    // String renderHtml(Mailto mailto) =>
+    //     '''<html><head><title>mailto example</title></head><body><a href="$mailto">Open mail client</a></body></html>''';
+    // await for (HttpRequest request in server) {
+    //   request.response
+    //     ..statusCode = HttpStatus.ok
+    //     ..headers.contentType = ContentType.html
+    //     ..write(renderHtml(mailto));
+    //   await request.response.close();
+    // }
+  }
+
   void _sendMail() async {
     bool isValidForm = _formKey.currentState.validate();
     if (!isValidForm) return;
+
+    print("subject:"+_nameController.text);
+    print("deskripsi:"+_contentController.text);
 
     final mailto = Mailto(
       to: [AppConstants.mail],
       subject: _nameController.text.trim(),
       body: _contentController.text.trim(),
     );
+    await launch('$mailto');
+    setState(() {
+      _nameController.text = "";
+      _contentController.text = "";
+    });
 
-    final server = await HttpServer.bind(InternetAddress.loopbackIPv4, 3000);
-    String renderHtml(Mailto mailto) =>
-        '''<html><head><title>mailto example</title></head><body><a href="$mailto">Open mail client</a></body></html>''';
-    await for (HttpRequest request in server) {
-      request.response
-        ..statusCode = HttpStatus.ok
-        ..headers.contentType = ContentType.html
-        ..write(renderHtml(mailto));
-      await request.response.close();
-    }
+    // final server = await HttpServer.bind(InternetAddress.loopbackIPv4, 3000);
+    // String renderHtml(Mailto mailto) =>
+    //     '''<html><head><title>mailto example</title></head><body><a href="$mailto">Open mail client</a></body></html>''';
+    // await for (HttpRequest request in server) {
+    //   request.response
+    //     ..statusCode = HttpStatus.ok
+    //     ..headers.contentType = ContentType.html
+    //     ..write(renderHtml(mailto));
+    //   await request.response.close();
+    // }
   }
 
   @override

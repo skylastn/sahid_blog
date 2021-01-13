@@ -15,13 +15,14 @@ class Statistics extends StatelessWidget {
           horizontal: MediaQuery.of(context).size.width * .15,
         ),
         child:
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          _buildStatistic(
-              context, 'icons/briefcase.png', '4+', 'Years of Experience'),
-          _buildStatistic(context, 'icons/menu.png', '${PROJECTS.length}+',
-              'Projects Done'),
-          _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
-          _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              _buildStatistic(
+                  context, 'icons/briefcase.png', '2+', 'Years of Experience'),
+              Container(margin: EdgeInsets.only(left: 20, right: 20),),
+              _buildStatistic(context, 'icons/menu.png', '${PROJECTS.length}+',
+                  'Projects Done'),
+              // _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
+              // _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
         ]),
       ),
       mobileScreen: Container(
@@ -33,14 +34,14 @@ class Statistics extends StatelessWidget {
         child: Column(
           children: [
             _buildStatistic(
-                context, 'icons/briefcase.png', '4+', 'Years of Experience'),
+                context, 'icons/briefcase.png', '2+', 'Years of Experience'),
             const SizedBox(height: 50),
             _buildStatistic(context, 'icons/menu.png', '${PROJECTS.length}+',
                 'Projects Done'),
-            const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
-            const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+            // const SizedBox(height: 50),
+            // _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
+            // const SizedBox(height: 50),
+            // _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
           ],
         ),
       ),

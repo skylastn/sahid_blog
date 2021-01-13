@@ -120,22 +120,22 @@ class _HomeState extends State<Home> {
                               color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
-                      // MaterialButton(
-                      //   onPressed: _scrollToWorkingProcess,
-                      //   child: Text(
-                      //     'Process',
-                      //     style: TextStyle(
-                      //         color: Colors.white, fontWeight: FontWeight.bold),
-                      //   ),
-                      // ),
                       MaterialButton(
-                        onPressed: _scrollToRecentProjects,
+                        onPressed: _scrollToWorkingProcess,
                         child: Text(
-                          'Portfolio',
+                          'Process',
                           style: TextStyle(
                               color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
+                      // MaterialButton(
+                      //   onPressed: _scrollToRecentProjects,
+                      //   child: Text(
+                      //     'Portfolio',
+                      //     style: TextStyle(
+                      //         color: Colors.white, fontWeight: FontWeight.bold),
+                      //   ),
+                      // ),
                       const SizedBox(width: 20),
                       RaisedButton(
                         onPressed: _scrollToContactUs,
@@ -250,16 +250,16 @@ class _HomeState extends State<Home> {
                         color: AppColors.black,
                       ),
                     ),
-                    const SizedBox(width: 20),
-                    InkWell(
-                      onTap: () {
-                        launch(AppConstants.twitter);
-                      },
-                      child: AppIcon(
-                        'icons/twitter.png',
-                        color: AppColors.black,
-                      ),
-                    ),
+                    // const SizedBox(width: 20),
+                    // InkWell(
+                    //   onTap: () {
+                    //     launch(AppConstants.twitter);
+                    //   },
+                    //   child: AppIcon(
+                    //     'icons/twitter.png',
+                    //     color: AppColors.black,
+                    //   ),
+                    // ),
                     const SizedBox(width: 20),
                     InkWell(
                       onTap: () {
@@ -350,14 +350,14 @@ class _HomeState extends State<Home> {
           key: _aboutGlobaleKey,
           child: About(),
         ),
-        // SliverToBoxAdapter(
-        //   key: _statisticsGlobaleKey,
-        //   child: Statistics(),
-        // ),
-        // SliverToBoxAdapter(
-        //   key: _workingProcessGlobaleKye,
-        //   child: WorkingProcess(),
-        // ),
+        SliverToBoxAdapter(
+          key: _statisticsGlobaleKey,
+          child: Statistics(),
+        ),
+        SliverToBoxAdapter(
+          key: _workingProcessGlobaleKye,
+          child: WorkingProcess(),
+        ),
         // SliverToBoxAdapter(
         //   key: _recentProjectsGlobaleKey,
         //   child: MyProjects(),

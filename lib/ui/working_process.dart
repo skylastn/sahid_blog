@@ -30,8 +30,9 @@ class WorkingProcess extends StatelessWidget {
                       context,
                       '01.',
                       'icons/pencil.png',
-                      'Plan',
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
+                      'Planning',
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'
+                  ),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -73,7 +74,7 @@ class WorkingProcess extends StatelessWidget {
             const SizedBox(height: 3),
             Container(width: 50, height: 2, color: AppColors.yellow),
             const SizedBox(height: 50),
-            __buildProcess(context, '01.', 'icons/pencil.png', 'Plan',
+            __buildProcess(context, '01.', 'icons/pencil.png', 'Planning',
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
             const SizedBox(height: 10),
             __buildProcess(context, '02.', 'icons/design.png', 'Design',
@@ -120,13 +121,13 @@ class WorkingProcess extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            Text(
-              description,
-              style: TextStyle(
-                color: Colors.black45,
-              ),
-              textAlign: TextAlign.center,
-            )
+            // Text(
+            //   description,
+            //   style: TextStyle(
+            //     color: Colors.black45,
+            //   ),
+            //   textAlign: TextAlign.center,
+            // )
           ],
         ),
       ),

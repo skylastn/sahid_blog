@@ -392,7 +392,7 @@ class Footer extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Proudly powered by OuahidDev ©${DateTime.now().year}',
+              'Powered by SkyDeveloper ©${DateTime.now().year}',
               style: TextStyle(
                 color: AppColors.greyLight.withOpacity(.75),
               ),
@@ -440,13 +440,13 @@ class Footer extends StatelessWidget {
           },
           child: AppIcon('icons/linkedin.png'),
         ),
-        const SizedBox(width: 20),
-        InkWell(
-          onTap: () {
-            launch(AppConstants.twitter);
-          },
-          child: AppIcon('icons/twitter.png'),
-        ),
+        // const SizedBox(width: 20),
+        // InkWell(
+        //   onTap: () {
+        //     launch(AppConstants.twitter);
+        //   },
+        //   child: AppIcon('icons/twitter.png'),
+        // ),
         const SizedBox(width: 20),
         InkWell(
           onTap: () {
