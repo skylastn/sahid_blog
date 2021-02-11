@@ -71,12 +71,12 @@ class About extends StatelessWidget {
                             ),
                             const SizedBox(width: 20),
                             RaisedButton(
-                              onPressed: _downloadCV,
+                              onPressed: _Github,
                               color: AppColors.black,
                               textColor: Colors.white,
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
-                              child: Text('VIEW RESUME'),
+                              child: Text('MY GITHUB'),
                             ),
                           ],
                         ),
@@ -150,12 +150,12 @@ class About extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               RaisedButton(
-                onPressed: _downloadCV,
+                onPressed: _Github,
                 color: AppColors.black,
                 textColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                child: Text('VIEW RESUME'),
+                child: Text('MY GITHUB'),
               ),
               const SizedBox(height: 50),
               Text('MY SKILLS', style: AppStyles.title),
@@ -177,6 +177,9 @@ class About extends StatelessWidget {
 
   void _downloadCV() {
     launch(AppConstants.cv);
+  }
+  void _Github() {
+    launch(AppConstants.github);
   }
   void _hireme() {
     launch("https://wa.me/628815123766/?text=Halo Sahid, "

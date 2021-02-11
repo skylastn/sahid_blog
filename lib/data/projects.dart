@@ -11,80 +11,59 @@ class Project {
 // ignore: non_constant_identifier_names
 List<Project> PROJECTS = [
   Project(
-    name: 'Omran',
+    name: 'Menkosik',
     description:
-        'Developing a strategic plan that can lead the Muslim Ummah towards global competitiveness and can direct the efforts of qualified and skilled youth towards optimal utilization of planning and institutional tools to contribute to the renaissance of their communities and homeland countries.',
-    image: 'images/projects/omran.png',
-    url: 'https://play.google.com/store/apps/details?id=org.omran.android',
+        'Developing mobile native android for rental boarding house',
+    image: 'assets/images/menkosik.jpg',
+    url: 'https://apkpure.com/menkosik/org.d3ifcool.menkosik',
     skills: [
-      'Dart',
       'Java',
-      'Php',
-      'Sql',
-      'Flutter',
-      'OneSignal',
-      'Git',
+      'Firebase',
+      'SQL',
+      'Github',
     ],
   ),
   Project(
-    name: 'Topfood',
-    description: 'Food delivery app',
-    image: 'images/projects/topfood.png',
+    name: 'School Of Parenting',
+    description: 'Developing mobile native android for School Of Parenting',
+    image: 'assets/images/sop.jpeg',
     url:
-        'https://play.google.com/store/apps/details?id=dz.topfood.top_food_client',
+        'https://play.google.com/store/apps/details?id=id.schoolofparenting',
+    skills: [
+      'Java',
+      'Php',
+      'Webservice',
+      'Socket',
+      'Github',
+    ],
+  ),
+  Project(
+    name: 'Macanan Homepage',
+    description: 'Mobile Company Profile Macanan',
+    image: 'assets/images/macanan.jpg',
+    url:
+    'https://play.google.com/store/apps/details?id=net.macanan',
     skills: [
       'Dart',
       'Flutter',
-      'Git',
+      'Webservice',
+      'Augment Reality',
+      'Flutter_Unity',
+      'Github',
     ],
   ),
-  Project(
-    name: 'Toptaxi',
-    description:
-        'Toptaxi is a third party transportation service, which is intended to provide cars to its customers through a smart application whenever they request. The use of this application is free',
-    image: 'images/projects/toptaxi.png',
-    url: 'https://play.google.com/store/apps/details?id=toptaxi.dz',
-    skills: [
-      'Java',
-      'Php',
-      'JavaScript',
-      'Html',
-      'Css',
-      'Sql',
-      'Firebase',
-      'Laravel',
-      'OneSignal',
-      'Git',
-    ],
-  ),
-  Project(
-    name: 'Nataloe',
-    description:
-        'nataloe شركة جزائرية - إسبانية متخصصة بانتاج مستحضرات شبه صيدلانية للعناية اليومية بالبشرة اعتمادا على خلاصتي الألوفيرا والحلزون والزيوت الأساسية',
-    image: 'images/projects/nataloe.png',
-    url: 'https://play.google.com/store/apps/details?id=com.nataloe',
-    skills: [
-      'Kotlin',
-      'Php',
-      'JavaScript',
-      'Html',
-      'Css',
-      'Sql',
-      'Firebase',
-      'Laravel',
-      'Git',
-    ],
-  ),
-  Project(
-    name: 'جداء',
-    description:
-        'يعتبر تعليم الطفل جدول الضرب من أصعب الأمور بالنسبة للأولياء وممل بالنسبة لطفل، لكن مع التطور التكنولوجي وحب الاطفال للتكنولوجيا أصبح ذلك من أيسر المهام على الأولياء والطفل على حد سواء ؛ تطبيق جداء يعتبر الحل الامثل لتعلم جدول الضرب خطوة بخطوة بطريقة سهلة وممتعة مع أصوات خاصة بالإجابة الصحيحة أوالخاطئة، أيضا التطبيق يعطيك تقييما لمستواك خلال التعلم تقييم لكل الجداول معا وتقييم خاص لكل جدول كما يمكنك التطبيق من إجراء إمتحان مباشر لتحديد المستوى ويقوم بحفظ كل نتائجك مع التقييم والتاريخ وبالتالي يمكنك الرجوع لها في أي وقت للإطلاع عليها وملاحظة مراحل تطورك مع الوقت.',
-    image: 'images/projects/juda.png',
-    url: 'https://play.google.com/store/apps/details?id=com.ouahiddev.juda',
-    skills: [
-      'Java',
-      'Sql',
-      'Git',
-    ],
-  ),
+
+  // Project(
+  //   name: 'Trukajaya',
+  //   description: 'Mobile Online Shop Trukajaya',
+  //   image: 'assets/images/macanan.jpg',
+  //   url:
+  //   'https://drive.google.com/file/d/1m7OGm_-8VQG8WCaPCtpVP0hryzDBcY2U/view?usp=sharing',
+  //   skills: [
+  //     'Dart',
+  //     'Flutter',
+  //     'Webservice',
+  //     'Github',
+  //   ],
+  // ),
 ];

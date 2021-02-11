@@ -197,13 +197,13 @@ class _HomeState extends State<Home> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                // ListTile(
-                //   onTap: _scrollToWorkingProcess,
-                //   title: Text(
-                //     'Process',
-                //     style: TextStyle(fontWeight: FontWeight.bold),
-                //   ),
-                // ),
+                ListTile(
+                  onTap: _scrollToWorkingProcess,
+                  title: Text(
+                    'Process',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
                 ListTile(
                   onTap: _scrollToRecentProjects,
                   title: Text(
@@ -358,10 +358,10 @@ class _HomeState extends State<Home> {
           key: _workingProcessGlobaleKye,
           child: WorkingProcess(),
         ),
-        // SliverToBoxAdapter(
-        //   key: _recentProjectsGlobaleKey,
-        //   child: MyProjects(),
-        // ),
+        SliverToBoxAdapter(
+          key: _recentProjectsGlobaleKey,
+          child: MyProjects(),
+        ),
         SliverToBoxAdapter(
           key: _contactUsGlobaleKey,
           child: ContactUs(),
