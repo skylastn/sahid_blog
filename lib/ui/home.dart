@@ -128,14 +128,14 @@ class _HomeState extends State<Home> {
                               color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
-                      // MaterialButton(
-                      //   onPressed: _scrollToRecentProjects,
-                      //   child: Text(
-                      //     'Portfolio',
-                      //     style: TextStyle(
-                      //         color: Colors.white, fontWeight: FontWeight.bold),
-                      //   ),
-                      // ),
+                      MaterialButton(
+                        onPressed: _scrollToRecentProjects,
+                        child: Text(
+                          'Portfolio',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                      ),
                       const SizedBox(width: 20),
                       RaisedButton(
                         onPressed: _scrollToContactUs,
