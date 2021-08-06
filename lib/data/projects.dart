@@ -15,7 +15,7 @@ List<Project> PROJECTS = [
     description:
         'Developing mobile native android for rental boarding house',
     image: 'assets/images/menkosik.jpg',
-    url: 'https://tkj.tokosahid.my.id/api_monitoring/file/kegiatan/anekdot/penawaran_inet_dedicated.pdf',
+    url: 'https://apkpure.com/menkosik/org.d3ifcool.menkosik',
     skills: [
       'Java',
       'Firebase',
@@ -34,6 +34,36 @@ List<Project> PROJECTS = [
       'Php',
       'Webservice',
       'Socket',
+      'Github',
+    ],
+  ),
+
+  Project(
+    name: 'SkyTronik',
+    description: 'Developing mobile for SkyTronik',
+    image: 'assets/images/skytronik.jpeg',
+    url:
+    'https://skytronik.tokosahid.my.id/aplikasi/SkyTronik.apk',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Webservice',
+      'Code Igniter',
+      'Github',
+    ],
+  ),
+
+  Project(
+    name: 'Monitoring TK',
+    description: 'Website for Monitoring Tiara Nusa Klaten Kindergarten',
+    image: 'assets/images/monitoring.png',
+    url:
+    'https://tkj.tokosahid.my.id',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Webservice',
+      'Code Igniter',
       'Github',
     ],
   ),
@@ -56,7 +86,7 @@ List<Project> PROJECTS = [
   Project(
     name: 'Macanan AR',
     description: 'Augment Reality Video for PT Macananjaya Cemerlang',
-    image: 'assets/images/macanan.jpg',
+    image: 'assets/images/macanan_ar.png',
     url:
     'https://play.google.com/store/apps/details?id=com.mjc.MJCAR',
     skills: [
