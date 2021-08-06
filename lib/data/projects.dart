@@ -15,7 +15,7 @@ List<Project> PROJECTS = [
     description:
         'Developing mobile native android for rental boarding house',
     image: 'assets/images/menkosik.jpg',
-    url: 'https://apkpure.com/menkosik/org.d3ifcool.menkosik',
+    url: 'https://tkj.tokosahid.my.id/api_monitoring/file/kegiatan/anekdot/penawaran_inet_dedicated.pdf',
     skills: [
       'Java',
       'Firebase',
@@ -53,17 +53,15 @@ List<Project> PROJECTS = [
     ],
   ),
 
-  // Project(
-  //   name: 'Trukajaya',
-  //   description: 'Mobile Online Shop Trukajaya',
-  //   image: 'assets/images/macanan.jpg',
-  //   url:
-  //   'https://drive.google.com/file/d/1m7OGm_-8VQG8WCaPCtpVP0hryzDBcY2U/view?usp=sharing',
-  //   skills: [
-  //     'Dart',
-  //     'Flutter',
-  //     'Webservice',
-  //     'Github',
-  //   ],
-  // ),
+  Project(
+    name: 'Macanan AR',
+    description: 'Augment Reality Video for PT Macananjaya Cemerlang',
+    image: 'assets/images/macanan.jpg',
+    url:
+    'https://play.google.com/store/apps/details?id=com.mjc.MJCAR',
+    skills: [
+      'Unity3D',
+      'Video'
+    ],
+  ),
 ];

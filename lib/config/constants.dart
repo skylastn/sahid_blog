@@ -16,5 +16,5 @@ mixin AppConstants {
       'https://www.facebook.com/rizkiwahyu.hutomo/';
 
   static final String cv =
-      'https://drive.google.com/file/d/1VEOJD-53fSksYDbYfC8gKmsn1-yHWbva/view?usp=sharing';
+      'https://drive.google.com/file/d/1iyOrmxmpWfBXHoVyYuDx3U5b79i60JRC/view?usp=sharing';
 }
