@@ -10,6 +10,21 @@ class Project {
 
 // ignore: non_constant_identifier_names
 List<Project> PROJECTS = [
+
+  Project(
+    name: 'PitoeStore',
+    description:
+    'Developing mobile hybrid for Marketplace PitoeStore',
+    image: 'assets/images/pitoestore.png',
+    url: 'https://drive.google.com/file/d/1MjmBHswvFy6cTXdC0QmDp6wBaZPzf2b5/view?usp=sharing',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Webservice',
+      'Github',
+    ],
+  ),
+
   Project(
     name: 'Menkosik',
     description:
@@ -23,6 +38,7 @@ List<Project> PROJECTS = [
       'Github',
     ],
   ),
+
   Project(
     name: 'School Of Parenting',
     description: 'Developing mobile native android for School Of Parenting',
@@ -41,7 +57,7 @@ List<Project> PROJECTS = [
   Project(
     name: 'SkyTronik',
     description: 'Developing mobile for SkyTronik',
-    image: 'assets/images/skytronik.jpeg',
+    image: 'assets/images/skytronik.jpg',
     url:
     'https://skytronik.tokosahid.my.id/aplikasi/SkyTronik.apk',
     skills: [
@@ -83,15 +99,15 @@ List<Project> PROJECTS = [
     ],
   ),
 
-  Project(
-    name: 'Macanan AR',
-    description: 'Augment Reality Video for PT Macananjaya Cemerlang',
-    image: 'assets/images/macanan_ar.png',
-    url:
-    'https://play.google.com/store/apps/details?id=com.mjc.MJCAR',
-    skills: [
-      'Unity3D',
-      'Video'
-    ],
-  ),
+  // Project(
+  //   name: 'Macanan AR',
+  //   description: 'Augment Reality Video for PT Macananjaya Cemerlang',
+  //   image: 'assets/images/macanan_ar.png',
+  //   url:
+  //   'https://play.google.com/store/apps/details?id=com.mjc.MJCAR',
+  //   skills: [
+  //     'Unity3D',
+  //     'Video'
+  //   ],
+  // ),
 ];
